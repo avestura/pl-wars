@@ -3,7 +3,7 @@ import type { HelperId, Rng } from './types';
 
 export type Phase =
   | 'intro' | 'reply' | 'taunt' | 'hurt' | 'lowhp' | 'special'
-  | 'winRound' | 'loseRound' | 'winMatch' | 'assist';
+  | 'winRound' | 'loseRound' | 'winMatch' | 'assist' | 'block' | 'combo' | 'dodge' | 'ringout';
 
 export type Emotion =
   | 'mockery' | 'contempt' | 'smug' | 'anger' | 'distress' | 'confident' | 'pity' | 'panic' | 'nostalgia'
@@ -41,7 +41,7 @@ export function pickLine(speaker: HelperId, listener: HelperId, phase: Phase, rn
   for (const ph of order) {
     let specific = pool(speaker, listener, ph);
     // midgame phases: matchup-specific lines are used ~60% of the time so generic lines still show up
-    if (specific.length && (phase === 'intro' || phase === 'reply' || phase === 'assist' || rng() < 0.6)) {
+    if (specific.length && (phase === 'intro' || phase === 'reply' || phase === 'assist' || rng() < 0.65)) {
       const fresh = exclude ? specific.filter((l) => !exclude.has(l.id)) : specific;
       if (fresh.length) specific = fresh;
       return specific[Math.floor(rng() * specific.length)];

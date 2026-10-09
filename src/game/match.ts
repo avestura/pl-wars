@@ -482,7 +482,7 @@ export class Match {
   hit(t: Fighter, h: HitSpec): HitResult {
     if (this.phase !== 'fight' || t.state === 'ko') return 'miss';
     const a = h.attacker;
-    if (t.invulnT > 0 || t.st.invuln > 0) { this.fx.text(t.x, t.y - 110, 'MISS', '#9ad', 12, 30); return 'miss'; }
+    if (t.invulnT > 0 || t.st.invuln > 0) { this.fx.text(t.x, t.y - 110, 'MISS', '#9ad', 12, 30); if (t.invulnT > 0) this.say(t, 'dodge', 0.3); return 'miss'; }
     if (t.st.shield > 0) {
       this.fx.ring(t.x, t.cy, 80, '#7fe3f5'); this.sfx('block'); this.fx.text(t.x, t.y - 120, 'BLOCKED', '#7fe3f5', 12, 30);
       if (a && h.src === 'melee') a.vx = -a.facing * 3;
@@ -518,6 +518,7 @@ export class Match {
       this.fx.text(t.x, t.y - 118, 'BLOCK', '#9ad2ff', 12, 28);
       this.hitstop = Math.max(this.hitstop, 3);
       this.sfx('block');
+      this.say(t, 'block', 0.3);
       return 'blocked';
     }
 
@@ -535,7 +536,7 @@ export class Match {
     if (a) {
       a.meter = Math.min(100, a.meter + dmg * 0.9);
       a.combo++; a.comboT = 60;
-      this.say(a, 'taunt', 0.18);
+      if (a.combo === 3 || a.combo === 5) this.say(a, 'combo', 0.6); else this.say(a, 'taunt', 0.2);
     }
     this.say(t, 'hurt', 0.22);
     const heavy = dmg >= 12;
@@ -591,8 +592,11 @@ export class Match {
         for (const f of this.fighters) {
           if (f.state !== 'ko' && (f.x < BLAST.left || f.x > BLAST.right || f.y > BLAST.bottom || f.y < BLAST.top)) {
             this.knockout(f, true); this.fx.text(Math.max(110, Math.min(W - 110, f.x)), Math.max(60, Math.min(H - 40, f.y)), 'RING OUT!', '#ff6b6b', 22, 70); this.sfx('ko');
+            this.later(30, () => { const w = this.foe(f); if (w.state !== 'ko') this.say(w, 'ringout', 1, true); });
           }
         }
+        // quiet moment: somebody talks smack
+        if (this.t % 300 === 0) this.say(this.fighters[this.rng() < 0.5 ? 0 : 1], 'taunt', 0.5);
         const [a, b] = this.fighters;
         if (a.state === 'ko' || b.state === 'ko') {
           this.endRound(a.state === 'ko' && b.state === 'ko' ? -1 : a.state === 'ko' ? 1 : 0);

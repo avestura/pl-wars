@@ -80,7 +80,7 @@ Esc / P / Start pauses.
 All lines are in `src/data/dialogs.json`, keyed `speaker → opponent (or "*") → phase`, each with an **emotion tag** (mockery, contempt, smug, anger, distress, serene, ...).
 
 - A random fighter speaks first on the versus screen and the other replies, using a matchup-specific line when one exists.
-- During fights, lines trigger on hits, taking damage, low health, specials, round win/loss and summons.
+- During fights, lines trigger on landing hits, taking damage, blocking, dodging, combos (3 and 5 hits), low health, specials, ring-outs, round win/loss, summons, and idle taunts during quiet moments. A line is never repeated within a match until a pool is exhausted.
 - Add a matchup by adding an entry under `speaker → opponent`; anything missing falls back to the speaker's `"*"` pool.
 
 ### Adding real voices later
