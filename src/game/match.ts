@@ -457,8 +457,10 @@ export class Match {
     const line = pickLine(f.id, foe.id, phase, this.rng, this.used);
     if (!line) return;
     this.used.add(line.id);
-    f.bubble = { line, text: line.text, t: 0, life: 40 + line.text.length * 3.2 };
-    f.bubbleCd = 240; this.sayCd = 100;
+    // ~14 chars/sec reading speed plus a generous hold so the line can be read at leisure
+    const life = 130 + line.text.length * 5.5;
+    f.bubble = { line, text: line.text, t: 0, life };
+    f.bubbleCd = life + 90; this.sayCd = 150;
     this.lineQueue.push({ line, side: f.side });
   }
 
@@ -471,7 +473,7 @@ export class Match {
     this.assists.push(a);
     if (this.dialogOn) {
       const line = pickLine(helper, owner.id, 'assist', this.rng);
-      if (line) { a.bubble = { line, text: line.text, t: 0, life: 150 }; this.lineQueue.push({ line, side: 'assist' }); }
+      if (line) { a.bubble = { line, text: line.text, t: 0, life: 130 + line.text.length * 5.5 }; this.lineQueue.push({ line, side: 'assist' }); }
     }
     this.fx.text(owner.x, owner.y - 130, 'Call for help!', '#ffffff', 14);
     return a;

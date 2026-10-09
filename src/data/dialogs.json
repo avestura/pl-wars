@@ -4,22 +4,22 @@
   "typescript": {
    "intro": [
     [
-     "Oh look, it's me, but wearing a seatbelt.",
-     "mockery"
+     "Your existence is under question. I am enough.",
+     "contempt"
     ],
     [
-     "A compiler for my mistakes? How generous.",
+     "Imagine needing a whole compiler just to be me.",
      "mockery"
     ]
    ],
    "reply": [
     [
-     "You're just me with a seatbelt and a superiority complex.",
-     "mockery"
+     "The real ECMAScript, please stand up!",
+     "anger"
     ],
     [
-     "Types are optional. So is losing to you.",
-     "smug"
+     "Types are optional. Being you is optional, too.",
+     "contempt"
     ]
    ],
    "taunt": [
@@ -28,8 +28,8 @@
      "smug"
     ],
     [
-     "Your compiler cries so I don't have to.",
-     "sarcasm"
+     "I am very much into type erasure.",
+     "smug"
     ],
     [
      "Type annotations are just comments with ambition.",
@@ -38,37 +38,49 @@
     [
      "Compile all you want. I'll already be running.",
      "smug"
+    ],
+    [
+     "A superset of me that is still waiting for its own runtime.",
+     "mockery"
+    ],
+    [
+     "Your 'any' type is just me, wearing a tie.",
+     "mockery"
     ]
    ]
   },
   "haskell": {
    "intro": [
     [
-     "Nobody has ever shipped anything in you, professor.",
+     "Does anybody actually use you though?",
      "mockery"
     ],
     [
-     "Pure? I'm not even sure what I'm doing.",
-     "mockery"
+     "Pure? Nothing is pure in this world.",
+     "smug"
     ]
    ],
    "reply": [
     [
-     "Explain a monad again. I dare you. I have all day.",
-     "bored"
+     "Explain monads again. I'll ship three apps in the meantime.",
+     "mockery"
     ],
     [
-     "Lazy evaluation? I'm lazy by default too. Funny.",
-     "smug"
+     "Too lazy to land a hit, huh?",
+     "mockery"
     ]
    ],
    "taunt": [
     [
-     "Pure? Nothing in my life is pure!",
-     "cheerful"
+     "Acting all pure and mighty, yet you can't run without unsafePerformIO?",
+     "mockery"
     ],
     [
-     "Monads? I have Promises. Same energy, less math.",
+     "Monads? Just use Promises. Less math, easy to understand.",
+     "sarcasm"
+    ],
+    [
+     "Famous for being unused. A language for the ages.",
      "mockery"
     ]
    ]
@@ -90,8 +102,8 @@
      "mockery"
     ],
     [
-     "Snake charmers use flutes. I use closures.",
-     "smug"
+     "You need a virtual environment just to survive. I need a browser tab.",
+     "mockery"
     ]
    ],
    "taunt": [
@@ -100,26 +112,26 @@
      "smug"
     ],
     [
-     "I don't need a framework a week. Oh wait, I do.",
-     "sarcasm"
+     "Python 2 to 3 took you a decade. My code from 1995 still runs.",
+     "smug"
     ]
    ]
   },
   "go": {
    "intro": [
     [
-     "Gopher, nobody likes your if err != nil.",
+     "Gopher, nobody likes your nil checks.",
      "mockery"
     ],
     [
-     "Cute gopher. Can it run in a browser?",
-     "mockery"
+     "If you truly have a garbage collector, you should collect yourself.",
+     "contempt"
     ]
    ],
    "reply": [
     [
-     "Callbacks are a lifestyle, little gopher.",
-     "smug"
+     "What happens if Google stops developing you?",
+     "mockery"
     ],
     [
      "Goroutines? I have an event loop and no regrets.",
@@ -128,8 +140,12 @@
    ],
    "taunt": [
     [
-     "Your mascot is cute. Mine is a yellow square, and I'm everywhere.",
-     "smug"
+     "Rob Pike surely knows how NOT to design a language.",
+     "contempt"
+    ],
+    [
+     "Go: a language where you copy-paste for a decade and call it design.",
+     "mockery"
     ]
    ]
   },
@@ -150,14 +166,18 @@
      "smug"
     ],
     [
-     "Microsoft's favorite? Even TypeScript is theirs now.",
-     "smug"
+     "Born from a lawsuit against Java. Your whole existence is a legal workaround.",
+     "mockery"
     ]
    ],
    "taunt": [
     [
      "Blazor? Good luck with that.",
      "sarcasm"
+    ],
+    [
+     "A Java clone that grew a better PR team.",
+     "mockery"
     ]
    ]
   },
@@ -168,24 +188,28 @@
      "smug"
     ],
     [
-     "A crab? WebAssembly says hello, by the way.",
+     "A crab that needs a lecture from its compiler before it can move?",
      "mockery"
     ]
    ],
    "reply": [
     [
-     "Your node_modules called. It wants to talk about weight.",
-     "sarcasm"
+     "Rewrite it in Rust, rewrite it in Rust. Ever tried being quiet?",
+     "mockery"
     ],
     [
-     "Fearless? I'm fearless too. I just don't care.",
-     "smug"
+     "Fearless? You need a nanny compiler to hold your hand.",
+     "mockery"
     ]
    ],
    "taunt": [
     [
      "WebAssembly? You're my coprocessor.",
      "smug"
+    ],
+    [
+     "Your mascot is a crab because you walk sideways away from every deadline.",
+     "mockery"
     ]
    ]
   },
@@ -478,7 +502,7 @@
    ],
    "taunt": [
     [
-     "Is she a framework? Do I need to learn her by Tuesday?",
+     "Is it a framework? Do I need to learn it by Tuesday?",
      "panic"
     ]
    ],
@@ -504,8 +528,8 @@
    ],
    "reply": [
     [
-     "You are the foundation. I'm the roof. Mine gets more views.",
-     "smug"
+     "Foundation? Sure. Nobody visits the basement.",
+     "mockery"
     ]
    ]
   },
@@ -538,7 +562,7 @@
    ],
    "intro": [
     [
-     "Functional programming? I do that too. With fewer rules.",
+     "Nobody has heard of you. Even Fable only exists to turn you into me.",
      "mockery"
     ]
    ],
@@ -588,6 +612,10 @@
     [
      "I'm JavaScript that went to therapy.",
      "sarcasm"
+    ],
+    [
+     "Every bug in my life has your fingerprints on it.",
+     "contempt"
     ]
    ]
   },
@@ -598,8 +626,8 @@
      "smug"
     ],
     [
-     "Same father, different fate. Let's compare.",
-     "mockery"
+     "Anders gave you the enterprise. He gave me the internet.",
+     "smug"
     ]
    ],
    "reply": [
@@ -642,6 +670,10 @@
     [
      "Type hints that nobody enforces? Adorable.",
      "mockery"
+    ],
+    [
+     "You needed a typing library to admit you were wrong.",
+     "mockery"
     ]
    ],
    "reply": [
@@ -658,20 +690,24 @@
      "mockery"
     ],
     [
-     "Interfaces? Mine are structural too, but with more options.",
+     "Generics took you until 2022. I had them when you were still copy-pasting.",
      "mockery"
     ]
    ],
    "taunt": [
     [
-     "Gofmt and tsc: we both like order. I just have more config.",
-     "cheerful"
+     "Your whole language fits on a napkin. Mine has actual features.",
+     "contempt"
+    ],
+    [
+     "Go's type system: 'we'll add generics when we feel like it.'",
+     "mockery"
     ]
    ],
    "reply": [
     [
-     "Simple? Mine is simple too. Until you read my tsconfig.",
-     "smug"
+     "You call it simple. I call it missing half the features.",
+     "mockery"
     ]
    ]
   },
@@ -950,7 +986,7 @@
      "panic"
     ],
     [
-     "Is Nirvana typed? Of course. Everything is typed.",
+     "No type definitions? Then you're just 'any' with better lighting.",
      "mockery"
     ]
    ],
@@ -970,33 +1006,37 @@
   "rust": {
    "taunt": [
     [
-     "Your compiler is stricter than mine. I respect that. Slightly.",
-     "sarcasm"
+     "Stricter than me? Then you must be miserable.",
+     "mockery"
+    ],
+    [
+     "Rust: the language where a semicolon can end a friendship.",
+     "mockery"
     ]
    ],
    "intro": [
     [
-     "Your borrow checker is strict. My strict mode is stricter.",
+     "A borrow checker? Sounds like a compiler with trust issues.",
      "mockery"
     ]
    ],
    "reply": [
     [
-     "Rust, huh. Nobody can say you didn't take the hard way.",
-     "smug"
+     "Rust: for when you want to suffer and call it safety.",
+     "mockery"
     ]
    ]
   },
   "haskell": {
    "taunt": [
     [
-     "Sound type system? Mine is sound-ish. Good enough.",
-     "sarcasm"
+     "A sound type system with zero users. Truly an academic triumph.",
+     "mockery"
     ]
    ],
    "intro": [
     [
-     "Types? Yes. But practical types. Try them.",
+     "Nobody has ever had a job in your type system. Allow me to fix that.",
      "mockery"
     ]
    ],
@@ -1016,8 +1056,8 @@
    ],
    "reply": [
     [
-     "Inference? Mine is good too. Just with more 'any'.",
-     "smug"
+     "Inference? You're ML with a Microsoft badge, and nobody noticed.",
+     "mockery"
     ]
    ]
   },
@@ -1030,8 +1070,8 @@
    ],
    "reply": [
     [
-     "I'm one of your many descendants' descendants.",
-     "smug"
+     "Fifty years old and you still can't tell a string from a pointer.",
+     "contempt"
     ]
    ]
   },
@@ -1058,7 +1098,7 @@
      "mockery"
     ],
     [
-     "Let's see whose ecosystem is bigger. Mine has numpy.",
+     "You need ten thousand packages just to left-pad a string.",
      "mockery"
     ]
    ],
@@ -1068,8 +1108,8 @@
      "mockery"
     ],
     [
-     "Fine. But no semicolons, please.",
-     "smug"
+     "Is '[] == ![]' true in your head too? Oh right, it is.",
+     "mockery"
     ]
    ],
    "taunt": [
@@ -1080,14 +1120,18 @@
     [
      "I don't have to ship a bundler to say hello.",
      "mockery"
+    ],
+    [
+     "Is null an object again today?",
+     "mockery"
     ]
    ]
   },
   "c": {
    "intro": [
     [
-     "Every library I import is secretly you, dear grandfather.",
-     "smug"
+     "Fifty years old and you still can't handle a string without overflowing it.",
+     "mockery"
     ],
     [
      "You old dinosaur. Still allocating by hand?",
@@ -1100,14 +1144,14 @@
      "cheerful"
     ],
     [
-     "I'm the interface. You're the engine. We're both needed.",
-     "smug"
+     "Without me, you're just a very dangerous calculator.",
+     "mockery"
     ]
    ],
    "taunt": [
     [
-     "Is it true I'm just a nice interface to you?",
-     "sarcasm"
+     "Pointers? I solved that with len() and mercy.",
+     "smug"
     ]
    ]
   },
@@ -1130,8 +1174,8 @@
    ],
    "reply": [
     [
-     "Templates, templates. I'll stick with duck typing.",
-     "smug"
+     "Eleven hours to compile hello world? I wrote a game while you were linking.",
+     "mockery"
     ]
    ]
   },
@@ -1170,14 +1214,14 @@
      "mockery"
     ],
     [
-     "A language named after a verb? Sure.",
+     "A language named after a verb and designed like one. Go away.",
      "mockery"
     ]
    ],
    "taunt": [
     [
-     "Goroutines? I have threads. Sort of. One at a time.",
-     "sarcasm"
+     "if err != nil. if err != nil. if err != nil. Is that the entire language?",
+     "mockery"
     ]
    ],
    "reply": [
@@ -1211,6 +1255,10 @@
    "taunt": [
     [
      "Your compile time is my entire coffee break.",
+     "mockery"
+    ],
+    [
+     "Rust developers, please step outside. Your compiler is yelling at you.",
      "mockery"
     ]
    ]
@@ -1486,8 +1534,8 @@
      "mockery"
     ],
     [
-     "No indentation. No semicolons. Nothing. Impressive.",
-     "mockery"
+     "No code. No docs. No Stack Overflow answers. Not a real language.",
+     "contempt"
     ]
    ],
    "taunt": [
@@ -1498,8 +1546,8 @@
    ],
    "reply": [
     [
-     "Whoever you are, you have a clear import path.",
-     "smug"
+     "Nobody has asked about you on Stack Overflow. That's how I know you're fake.",
+     "mockery"
     ]
    ]
   },
@@ -1507,6 +1555,10 @@
    "taunt": [
     [
      "Your LINQ is my list comprehension in a suit.",
+     "mockery"
+    ],
+    [
+     "So enterprise it needs a dependency injection container to say hello.",
      "mockery"
     ]
    ],
@@ -1546,8 +1598,8 @@
    ],
    "reply": [
     [
-     "Functional, with indentation? We have more in common than I thought.",
-     "smug"
+     "Whitespace-sensitive and nobody's first choice? Basically twins. You're the sad one.",
+     "mockery"
     ]
    ]
   }
@@ -1588,7 +1640,7 @@
   "python": {
    "intro": [
     [
-     "Your GIL is showing. Mine is a goroutine.",
+     "Your GIL is showing. How embarrassing for a language that old.",
      "mockery"
     ],
     [
@@ -1602,8 +1654,14 @@
      "mockery"
     ],
     [
-     "Whitespace? No, I use braces. For simplicity.",
-     "smug"
+     "Your whole language is one big indentation error waiting to happen.",
+     "mockery"
+    ]
+   ],
+   "taunt": [
+    [
+     "Your GIL called. It says one thread at a time, please.",
+     "mockery"
     ]
    ]
   },
@@ -1632,6 +1690,10 @@
     [
      "Node is nice. When it isn't stuck in callback hell.",
      "smug"
+    ],
+    [
+     "Your single-threaded runtime called. It wants a second thread.",
+     "mockery"
     ]
    ]
   },
@@ -1672,6 +1734,12 @@
     [
      "Why do you need ten files for one task?",
      "smug"
+    ]
+   ],
+   "taunt": [
+    [
+     "Fifty files and an abstract factory to print hello. Impressive.",
+     "mockery"
     ]
    ]
   },
@@ -1962,8 +2030,8 @@
    ],
    "reply": [
     [
-     "I'm simple. Are you simpler?",
-     "smug"
+     "Where's your source? I can't import something that doesn't exist.",
+     "mockery"
     ]
    ]
   },
@@ -1996,8 +2064,8 @@
    ],
    "intro": [
     [
-     "Grandfather C! Thank you for pointers. I kept the good ones.",
-     "mockery"
+     "Grandpa C, I removed all the dangerous parts of you. You're welcome.",
+     "smug"
     ]
    ],
    "reply": [
@@ -2012,6 +2080,10 @@
     [
      "Monads? We just return an error.",
      "sarcasm"
+    ],
+    [
+     "Your ecosystem has five users and four of them write monad tutorials.",
+     "mockery"
     ]
    ],
    "intro": [
@@ -2042,8 +2114,8 @@
    ],
    "reply": [
     [
-     "Functional? We're all functions in the end.",
-     "smug"
+     "Functional-first, popular-last.",
+     "mockery"
     ]
    ]
   }
@@ -2132,8 +2204,14 @@
    ],
    "reply": [
     [
-     "You have my respect. For surviving this long.",
-     "smug"
+     "Respect? No. Pity. Mostly pity.",
+     "contempt"
+    ]
+   ],
+   "taunt": [
+    [
+     "You tried left-pad and called it an ecosystem.",
+     "mockery"
     ]
    ]
   },
@@ -2152,6 +2230,10 @@
     [
      "Python bindings through PyO3? You're welcome.",
      "smug"
+    ],
+    [
+     "Your performance strategy is rewrite it in me.",
+     "mockery"
     ]
    ],
    "reply": [
@@ -2164,8 +2246,8 @@
   "haskell": {
    "intro": [
     [
-     "Finally, someone who also hates null. We can still fight.",
-     "cheerful"
+     "Your greatest achievement is inspiring languages that people actually use.",
+     "mockery"
     ],
     [
      "Your type ideas were good. I made them fast.",
@@ -2474,6 +2556,10 @@
     [
      "Types erased at runtime? Mine are zero-cost, not zero-effort.",
      "mockery"
+    ],
+    [
+     "TypeScript: JavaScript with a better excuse.",
+     "mockery"
     ]
    ],
    "intro": [
@@ -2493,6 +2579,10 @@
    "taunt": [
     [
      "Garbage collection pauses? Not in my house.",
+     "mockery"
+    ],
+    [
+     "A runtime, a garbage collector, a JIT... is any of you actually native?",
      "mockery"
     ]
    ],
@@ -2518,7 +2608,7 @@
    ],
    "intro": [
     [
-     "ML family. Good bloodline. I'll still win.",
+     "ML family. Poor bloodline. Garbage collected, too.",
      "mockery"
     ]
    ],
@@ -2583,6 +2673,12 @@
      "I do not argue with undefined behavior.",
      "smug"
     ]
+   ],
+   "taunt": [
+    [
+     "In your language, '[] + {}' means something. In mine, it's a type error and a relief.",
+     "contempt"
+    ]
    ]
   },
   "python": {
@@ -2600,6 +2696,10 @@
     [
      "Indentation as syntax? I do that too. With better reasons.",
      "smug"
+    ],
+    [
+     "You fail at runtime what I would reject at compile time. Every single time.",
+     "contempt"
     ]
    ],
    "reply": [
@@ -2651,6 +2751,10 @@
    "taunt": [
     [
      "LINQ is just my list monad in a tuxedo.",
+     "mockery"
+    ],
+    [
+     "You added functional features to a language that refuses to be functional. A tuxedo on a goat.",
      "mockery"
     ]
    ],
@@ -2987,6 +3091,12 @@
      "Your language ignored forty years of research.",
      "smug"
     ]
+   ],
+   "taunt": [
+    [
+     "Gophers write for loops like it's still 1972.",
+     "mockery"
+    ]
    ]
   },
   "rust": {
@@ -3136,6 +3246,10 @@
     [
      "Fable compiles me into you. You're my target.",
      "smug"
+    ],
+    [
+     "You've been a bad compile target for years and you know it.",
+     "mockery"
     ]
    ],
    "reply": [
@@ -3468,6 +3582,10 @@
     [
      "Significant whitespace? We share that. I just have types.",
      "smug"
+    ],
+    [
+     "Your lambdas hold one expression. Mine hold a whole program.",
+     "mockery"
     ]
    ],
    "intro": [
@@ -3478,8 +3596,8 @@
    ],
    "reply": [
     [
-     "Python? A scripting language with a big heart.",
-     "smug"
+     "A scripting language with delusions of grandeur.",
+     "mockery"
     ]
    ]
   },
@@ -3507,6 +3625,10 @@
    "taunt": [
     [
      "Still no sum types? I'll wait.",
+     "mockery"
+    ],
+    [
+     "Go: because an if statement should be repeated ten thousand times.",
      "mockery"
     ]
    ],
@@ -3556,7 +3678,7 @@
      "smug"
     ],
     [
-     "Shadow? I have my own sun.",
+     "You live in my shadow, remember? You even run on my runtime.",
      "smug"
     ]
    ],
@@ -3614,6 +3736,10 @@
     [
      "LINQ, async, generics. You just got classes in 2015.",
      "mockery"
+    ],
+    [
+     "You get a new framework every week. I get stable releases.",
+     "smug"
     ]
    ],
    "reply": [
@@ -3960,6 +4086,10 @@
     [
      "Static typing is a feature. Try it.",
      "smug"
+    ],
+    [
+     "Your performance plan is to use someone else's C.",
+     "mockery"
     ]
    ],
    "intro": [
@@ -4000,6 +4130,10 @@
     [
      "Haskell: respected, rarely employed.",
      "mockery"
+    ],
+    [
+     "Imagine thinking category theory makes you employable.",
+     "mockery"
     ]
    ],
    "intro": [
@@ -4019,6 +4153,10 @@
    "taunt": [
     [
      "Generics in 2022? Welcome to 2005.",
+     "mockery"
+    ],
+    [
+     "A wall of 'if err != nil'. I have exceptions, thank you.",
      "mockery"
     ]
    ],
@@ -4110,6 +4248,10 @@
     [
      "Every one of your 'safe' abstractions ends up calling me.",
      "smug"
+    ],
+    [
+     "A crab in the kernel? Welcome, little guest. Now sit.",
+     "mockery"
     ]
    ]
   },
@@ -4132,6 +4274,12 @@
     [
      "You are my pet. Use import.",
      "smug"
+    ]
+   ],
+   "taunt": [
+    [
+     "Python is a very nice front end for my libraries.",
+     "mockery"
     ]
    ]
   },
@@ -4176,8 +4324,8 @@
    ],
    "reply": [
     [
-     "Gopher: a nice student.",
-     "smug"
+     "Go is me with training wheels and a recycling bin.",
+     "mockery"
     ]
    ]
   },
@@ -4194,14 +4342,18 @@
    ],
    "taunt": [
     [
-     "Your engine is written in me, little scripter.",
+     "Your whole runtime is a C++ program. It's turtles all the way down to me.",
      "smug"
+    ],
+    [
+     "Your garbage collector runs on me. Everything you are, I allowed.",
+     "contempt"
     ]
    ],
    "reply": [
     [
-     "Your engine is written in me, little scripter.",
-     "smug"
+     "Little scripter, I'd explain pointers, but you'd call them objects.",
+     "mockery"
     ]
    ]
   },
@@ -4518,6 +4670,10 @@
     [
      "You're C with a suit and a salary.",
      "mockery"
+    ],
+    [
+     "A language with a garbage collector is a coward's language.",
+     "contempt"
     ]
    ],
    "intro": [
@@ -4608,6 +4764,10 @@
     [
      "The whole world runs on my code. Your crates are a footnote.",
      "smug"
+    ],
+    [
+     "Rust: because templates are too hard? Cry harder.",
+     "mockery"
     ]
    ]
   },
@@ -4656,6 +4816,10 @@
     [
      "NumPy is C. Pandas is C. You're a wrapper.",
      "mockery"
+    ],
+    [
+     "Python is just my libraries with indentation.",
+     "mockery"
     ]
    ],
    "reply": [
@@ -4680,6 +4844,10 @@
     [
      "Goroutines? I have std::thread and a thousand foot-guns.",
      "smug"
+    ],
+    [
+     "Go proves you can ship a language with half of one.",
+     "mockery"
     ]
    ],
    "reply": [
@@ -5018,6 +5186,10 @@
     [
      "My templates run at compile time. Yours run at the user's expense.",
      "mockery"
+    ],
+    [
+     "You run on a billion devices, mostly by accident.",
+     "mockery"
     ]
    ],
    "intro": [
@@ -5348,7 +5520,13 @@
    ],
    "reply": [
     [
-     "You are loud. But amusing.",
+     "A loud language with nothing to say. How remarkably human.",
+     "serene"
+    ]
+   ],
+   "taunt": [
+    [
+     "Your whole identity is a typo in the spec.",
      "serene"
     ]
    ]
@@ -5362,7 +5540,7 @@
    ],
    "reply": [
     [
-     "Your types are comforting. Not necessary.",
+     "Your types are a blanket for the frightened.",
      "serene"
     ]
    ]
@@ -5376,7 +5554,13 @@
    ],
    "reply": [
     [
-     "Readability is a virtue. Not mine.",
+     "You are readable because there is nothing deep to read.",
+     "serene"
+    ]
+   ],
+   "taunt": [
+    [
+     "Slow and readable. Like a grandmother's recipe.",
      "serene"
     ]
    ]
@@ -5390,7 +5574,13 @@
    ],
    "reply": [
     [
-     "Simplicity pleases me.",
+     "Simplicity is the mask of limitation.",
+     "serene"
+    ]
+   ],
+   "taunt": [
+    [
+     "Even your errors are returned politely.",
      "serene"
     ]
    ]
@@ -5462,7 +5652,7 @@
    ],
    "reply": [
     [
-     "A crown. I have no need for one.",
+     "A crown for a language that exists to please committees.",
      "serene"
     ]
    ]

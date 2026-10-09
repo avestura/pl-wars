@@ -321,7 +321,7 @@ export class IntroScreen implements Screen {
     if (m.confirm || m.pause) {
       if (!this.done) { this.chars = l.text.length; this.done = true; this.t = 0; app.sfx('select'); }
       else next();
-    } else if (this.done && this.t > 70 + l.text.length * 2.2) next();
+    } else if (this.done && this.t > 170 + l.text.length * 4.5) next();
     if (m.back) { app.sfx('back'); app.go(new TitleScreen()); }
   }
   pointer(app: App, _x: number, _y: number, down: boolean) { if (down) { const l = this.lines[this.step]; if (l && !this.done) { this.chars = l.text.length; this.done = true; this.t = 0; } else if (this.done) { if (this.step === 0 && this.lines[1]) { this.step = 1; this.speak(app); } else this.finish(app); } } }
