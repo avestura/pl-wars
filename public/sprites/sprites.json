@@ -1,0 +1,84 @@
+{
+  "frame": [
+    48,
+    48
+  ],
+  "base": 44,
+  "cols": 6,
+  "anims": {
+    "idle": {
+      "row": 0,
+      "frames": 4,
+      "fps": 6
+    },
+    "walk": {
+      "row": 1,
+      "frames": 6,
+      "fps": 12
+    },
+    "jump": {
+      "row": 2,
+      "frames": 2,
+      "fps": 6
+    },
+    "fall": {
+      "row": 3,
+      "frames": 1,
+      "fps": 6
+    },
+    "light": {
+      "row": 4,
+      "frames": 3,
+      "fps": 14
+    },
+    "heavy": {
+      "row": 5,
+      "frames": 5,
+      "fps": 12
+    },
+    "block": {
+      "row": 6,
+      "frames": 1,
+      "fps": 6
+    },
+    "hurt": {
+      "row": 7,
+      "frames": 2,
+      "fps": 8
+    },
+    "dodge": {
+      "row": 8,
+      "frames": 1,
+      "fps": 6
+    },
+    "special": {
+      "row": 9,
+      "frames": 4,
+      "fps": 10
+    },
+    "ko": {
+      "row": 10,
+      "frames": 3,
+      "fps": 6
+    },
+    "win": {
+      "row": 11,
+      "frames": 4,
+      "fps": 6
+    }
+  },
+  "chars": [
+    "javascript",
+    "typescript",
+    "python",
+    "go",
+    "rust",
+    "haskell",
+    "fsharp",
+    "csharp",
+    "c",
+    "cpp",
+    "nirvana",
+    "ocaml"
+  ]
+}

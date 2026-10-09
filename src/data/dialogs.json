@@ -1,0 +1,1762 @@
+{
+  "_doc": "dialogs[speaker][listener|'*'][phase] = [[text, emotion], ...]. Phases: intro (speaks first), reply (answers), taunt, hurt, lowhp, special, winRound, loseRound, winMatch, assist (speaker appears as a summoned helper for listener). Ids are generated as speaker.listener.phase.index and map to public/voice/<id>.mp3 for TTS.",
+  "javascript": {
+    "typescript": {
+      "intro": [
+        [
+          "Oh look, it's me, but wearing a seatbelt.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "You're just me with a seatbelt and a superiority complex.",
+          "mockery"
+        ]
+      ],
+      "taunt": [
+        [
+          "Types vanish at runtime, buddy. Poof.",
+          "smug"
+        ],
+        [
+          "Your compiler cries so I don't have to.",
+          "sarcasm"
+        ]
+      ]
+    },
+    "haskell": {
+      "intro": [
+        [
+          "Nobody has ever shipped anything in you, professor.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Explain a monad again. I dare you. I have all day.",
+          "bored"
+        ]
+      ],
+      "taunt": [
+        [
+          "Pure? Nothing in my life is pure!",
+          "cheerful"
+        ]
+      ]
+    },
+    "python": {
+      "intro": [
+        [
+          "Nice slow loop, snake. Take your time.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Enjoy your GIL, snake. One thread at a time!",
+          "mockery"
+        ]
+      ],
+      "taunt": [
+        [
+          "Whitespace matters? Sounds like a you problem.",
+          "smug"
+        ]
+      ]
+    },
+    "go": {
+      "intro": [
+        [
+          "Gopher, nobody likes your if err != nil.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Callbacks are a lifestyle, little gopher.",
+          "smug"
+        ]
+      ]
+    },
+    "csharp": {
+      "intro": [
+        [
+          "Nice eight-hundred-line class to print hello, Microsoft.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "I was written in ten days and I still outsell you.",
+          "smug"
+        ]
+      ]
+    },
+    "rust": {
+      "intro": [
+        [
+          "I'll be done shipping before you finish borrowing.",
+          "smug"
+        ]
+      ],
+      "reply": [
+        [
+          "Your node_modules called. It wants to talk about weight.",
+          "sarcasm"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "Prepare to be asynchronously destroyed.",
+          "confident"
+        ],
+        [
+          "I was written in ten days and I'm still your boss.",
+          "smug"
+        ]
+      ],
+      "taunt": [
+        [
+          "NaN? Never heard of her.",
+          "cheerful"
+        ],
+        [
+          "[] + {}. Go figure that one out.",
+          "mockery"
+        ],
+        [
+          "Is it a bug? No, it's a feature!",
+          "smug"
+        ]
+      ],
+      "hurt": [
+        [
+          "Ow! That's not even a valid argument!",
+          "distress"
+        ],
+        [
+          "Undefined behavior! Of my face!",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "Don't make me use a callback...",
+          "fear"
+        ],
+        [
+          "I need a polyfill for this pain!",
+          "panic"
+        ]
+      ],
+      "special": [
+        [
+          "Promise me you'll lose!",
+          "confident"
+        ],
+        [
+          "Await your fate!",
+          "anger"
+        ]
+      ],
+      "winRound": [
+        [
+          "Resolved. Next!",
+          "cheerful"
+        ],
+        [
+          "That one returned true.",
+          "smug"
+        ]
+      ],
+      "loseRound": [
+        [
+          "Unhandled promise rejection...",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "Ship it! No tests!",
+          "cheerful"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "Nirvana? That's not even a real language. Is it?",
+          "fear"
+        ],
+        [
+          "You don't exist. I would have a framework for you by now.",
+          "mockery"
+        ]
+      ]
+    }
+  },
+  "typescript": {
+    "javascript": {
+      "intro": [
+        [
+          "Feel the wrath of my types!",
+          "anger"
+        ]
+      ],
+      "reply": [
+        [
+          "Finally, a chance to fix you in person.",
+          "determined"
+        ]
+      ],
+      "taunt": [
+        [
+          "undefined is not a function? Not on my watch.",
+          "smug"
+        ],
+        [
+          "Have you tried adding a type annotation to that face?",
+          "mockery"
+        ]
+      ]
+    },
+    "csharp": {
+      "intro": [
+        [
+          "We share a father, Anders. But I got the better fanbase.",
+          "smug"
+        ]
+      ],
+      "reply": [
+        [
+          "Same father, bigger brother. Sit down.",
+          "sarcasm"
+        ]
+      ],
+      "taunt": [
+        [
+          "Strongly typed, but you still need a runtime. Cute.",
+          "mockery"
+        ]
+      ]
+    },
+    "python": {
+      "intro": [
+        [
+          "Optional type hints? Mine are enforced.",
+          "contempt"
+        ]
+      ],
+      "taunt": [
+        [
+          "Your hints are just comments with extra steps.",
+          "mockery"
+        ]
+      ]
+    },
+    "go": {
+      "intro": [
+        [
+          "Generics? Welcome to the party, Gopher. We started years ago.",
+          "mockery"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "Strictly typed, strictly better.",
+          "confident"
+        ],
+        [
+          "Your code will fail to compile. And so will you.",
+          "contempt"
+        ]
+      ],
+      "taunt": [
+        [
+          "Property 'defense' does not exist on type 'you'.",
+          "mockery"
+        ],
+        [
+          "Type 'loser' is not assignable to type 'winner'.",
+          "smug"
+        ],
+        [
+          "Have you tried adding a type annotation?",
+          "sarcasm"
+        ]
+      ],
+      "hurt": [
+        [
+          "That was an implicit 'any' hit!",
+          "distress"
+        ],
+        [
+          "Argh! A runtime error! Types can't save me here.",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "Errors. Everywhere.",
+          "panic"
+        ],
+        [
+          "tsc, don't fail me now...",
+          "fear"
+        ]
+      ],
+      "special": [
+        [
+          "Strictly typed, strictly deadly!",
+          "anger"
+        ],
+        [
+          "Compiling... pain.",
+          "smug"
+        ]
+      ],
+      "winRound": [
+        [
+          "Zero errors. Clean build.",
+          "smug"
+        ]
+      ],
+      "loseRound": [
+        [
+          "I used 'any' and got punished.",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "Build succeeded. Type-safe victory.",
+          "cheerful"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "Property 'Nirvana' does not exist. Please stop existing.",
+          "panic"
+        ]
+      ]
+    }
+  },
+  "python": {
+    "javascript": {
+      "intro": [
+        [
+          "Indentation is a feature. Semicolons are a cry for help.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Everything is a string with you. Even your dignity.",
+          "mockery"
+        ]
+      ],
+      "taunt": [
+        [
+          "Is 'banana' really what you get from adding letters?",
+          "sarcasm"
+        ]
+      ]
+    },
+    "c": {
+      "intro": [
+        [
+          "Every library I import is secretly you, dear grandfather.",
+          "smug"
+        ]
+      ],
+      "reply": [
+        [
+          "You do the work, I take the credit. Teamwork!",
+          "cheerful"
+        ]
+      ]
+    },
+    "cpp": {
+      "intro": [
+        [
+          "Imagine needing ten lines to say hello.",
+          "mockery"
+        ]
+      ],
+      "taunt": [
+        [
+          "I wrote this fight in three lines. How's your header file?",
+          "smug"
+        ]
+      ]
+    },
+    "haskell": {
+      "intro": [
+        [
+          "I don't need a PhD to print a list.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Your monad tutorials have worse readability than my regex.",
+          "sarcasm"
+        ]
+      ]
+    },
+    "go": {
+      "intro": [
+        [
+          "Generics came a decade late. How's the error handling?",
+          "mockery"
+        ]
+      ]
+    },
+    "rust": {
+      "intro": [
+        [
+          "Fighting the borrow checker already? Lost?",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "I ship in an afternoon. You're still compiling.",
+          "smug"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "Simple is better than complex. Like this beating.",
+          "confident"
+        ],
+        [
+          "Beautiful is better than ugly. Unlike you.",
+          "contempt"
+        ]
+      ],
+      "taunt": [
+        [
+          "There should be one obvious way to win. This one.",
+          "smug"
+        ],
+        [
+          "Slow? I'm busy being readable.",
+          "sarcasm"
+        ],
+        [
+          "from future import victory.",
+          "cheerful"
+        ]
+      ],
+      "hurt": [
+        [
+          "Sss! Whitespace violation!",
+          "distress"
+        ],
+        [
+          "IndentationError in my ribs!",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "Errors should never pass silently...",
+          "fear"
+        ],
+        [
+          "I need a virtual environment...",
+          "panic"
+        ]
+      ],
+      "special": [
+        [
+          "Importing pain!",
+          "confident"
+        ],
+        [
+          "pip install defeat!",
+          "smug"
+        ]
+      ],
+      "winRound": [
+        [
+          "Flat is better than nested.",
+          "smug"
+        ]
+      ],
+      "loseRound": [
+        [
+          "Traceback, most recent call last...",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "Now we are all consenting adults. You lost.",
+          "smug"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "Never heard of you. Is there a pip package?",
+          "mockery"
+        ]
+      ]
+    }
+  },
+  "go": {
+    "rust": {
+      "intro": [
+        [
+          "Fighting me? Do you have the time to compile first?",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "At least I compile before the heat death of the universe.",
+          "sarcasm"
+        ]
+      ],
+      "taunt": [
+        [
+          "Fearless concurrency? I've got a thousand goroutines for breakfast.",
+          "smug"
+        ]
+      ]
+    },
+    "python": {
+      "intro": [
+        [
+          "Your GIL is showing. Mine is a goroutine.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Come on, snake. One thread at a time, right?",
+          "mockery"
+        ]
+      ]
+    },
+    "javascript": {
+      "intro": [
+        [
+          "Callback hell? I have channels, friend.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Single-threaded and proud. I'll take on you and my friends.",
+          "smug"
+        ]
+      ]
+    },
+    "cpp": {
+      "intro": [
+        [
+          "My compile finished before your headers loaded.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Simple beats complicated. Come on, old timer.",
+          "confident"
+        ]
+      ]
+    },
+    "csharp": {
+      "intro": [
+        [
+          "Nice garbage collector. I have a better one, and I'm not bragging.",
+          "smug"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "Simple. Concurrent. Ready.",
+          "confident"
+        ],
+        [
+          "Let's keep this short. Like my spec.",
+          "smug"
+        ]
+      ],
+      "taunt": [
+        [
+          "Handling errors. Yours.",
+          "smug"
+        ],
+        [
+          "gofmt'd your face.",
+          "mockery"
+        ],
+        [
+          "Don't communicate by sharing memory. Communicate by winning.",
+          "smug"
+        ]
+      ],
+      "hurt": [
+        [
+          "Panic! But I will recover!",
+          "distress"
+        ],
+        [
+          "Not even a proper error value!",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "if err != nil... it's me.",
+          "fear"
+        ],
+        [
+          "Goroutines, assemble!",
+          "determined"
+        ]
+      ],
+      "special": [
+        [
+          "Go, go, go!",
+          "cheerful"
+        ],
+        [
+          "Concurrency is not parallelism. This is both.",
+          "smug"
+        ]
+      ],
+      "winRound": [
+        [
+          "Compiled in a blink.",
+          "cheerful"
+        ]
+      ],
+      "loseRound": [
+        [
+          "Deadlock. All goroutines are asleep.",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "Fast build, fast win.",
+          "cheerful"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "Simple, concurrent... and glowing? What are you?",
+          "fear"
+        ]
+      ]
+    }
+  },
+  "rust": {
+    "go": {
+      "intro": [
+        [
+          "Maybe carrying that huge runtime is the reason why your back hurts.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "A garbage collector pause? I'll wait.",
+          "mockery"
+        ]
+      ],
+      "taunt": [
+        [
+          "Don't worry, I'll free your memory. Eventually.",
+          "smug"
+        ]
+      ]
+    },
+    "c": {
+      "intro": [
+        [
+          "Memory safety isn't optional, grandpa.",
+          "contempt"
+        ]
+      ],
+      "reply": [
+        [
+          "Use after free? Not on my watch.",
+          "smug"
+        ]
+      ],
+      "taunt": [
+        [
+          "Forty years of CVEs say hello.",
+          "mockery"
+        ]
+      ]
+    },
+    "cpp": {
+      "intro": [
+        [
+          "I fixed everything you broke. With one compile error.",
+          "smug"
+        ]
+      ],
+      "reply": [
+        [
+          "You have eleven ways to blow your foot off. I have a compiler.",
+          "mockery"
+        ]
+      ]
+    },
+    "javascript": {
+      "intro": [
+        [
+          "Your node_modules weighs more than my whole kernel.",
+          "mockery"
+        ]
+      ]
+    },
+    "python": {
+      "intro": [
+        [
+          "No GIL here. Real threads, little snake.",
+          "smug"
+        ]
+      ]
+    },
+    "haskell": {
+      "intro": [
+        [
+          "Finally, someone who also hates null. We can still fight.",
+          "cheerful"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "You'll find I'm completely memory-safe. You, not so much.",
+          "confident"
+        ],
+        [
+          "Prepare to be borrowed and never returned.",
+          "smug"
+        ]
+      ],
+      "taunt": [
+        [
+          "Your lifetime has expired.",
+          "smug"
+        ],
+        [
+          "Cannot move out of borrowed content. That's you.",
+          "mockery"
+        ],
+        [
+          "Fearless concurrency. Fearless fighting.",
+          "confident"
+        ]
+      ],
+      "hurt": [
+        [
+          "Ferris stays strong!",
+          "determined"
+        ],
+        [
+          "That wasn't in the borrow checker's plan!",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "I can't unwrap this!",
+          "panic"
+        ],
+        [
+          "Panic! At the dojo!",
+          "panic"
+        ]
+      ],
+      "special": [
+        [
+          "Zero-cost destruction!",
+          "anger"
+        ],
+        [
+          "Fearless!",
+          "determined"
+        ]
+      ],
+      "winRound": [
+        [
+          "Compiled. Therefore correct.",
+          "smug"
+        ]
+      ],
+      "loseRound": [
+        [
+          "Thread 'main' panicked.",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "Rewrite it in Rust. Starting with you.",
+          "smug"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "No ownership model? No lifetimes? You are an abomination.",
+          "disgust"
+        ]
+      ]
+    }
+  },
+  "haskell": {
+    "fsharp": {
+      "intro": [
+        [
+          "You are a disgrace to the functional purity.",
+          "contempt"
+        ]
+      ],
+      "reply": [
+        [
+          "Mutable keyword? In MY lineage? Shameful.",
+          "disgust"
+        ]
+      ],
+      "taunt": [
+        [
+          "Side effects in a functional language. Tragic.",
+          "disgust"
+        ],
+        [
+          "Do you even know what a monad is, child?",
+          "mockery"
+        ]
+      ]
+    },
+    "javascript": {
+      "intro": [
+        [
+          "Implicit coercion? I feel faint.",
+          "disgust"
+        ]
+      ],
+      "reply": [
+        [
+          "Every second you live is a runtime exception waiting to happen.",
+          "contempt"
+        ]
+      ]
+    },
+    "python": {
+      "intro": [
+        [
+          "Dynamic typing. How quaint. Runtime errors are for the brave.",
+          "mockery"
+        ]
+      ]
+    },
+    "c": {
+      "intro": [
+        [
+          "Pointers, in this century? Fascinating archaeology.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Pointers? I only touch purely abstract things.",
+          "contempt"
+        ]
+      ]
+    },
+    "csharp": {
+      "intro": [
+        [
+          "You borrowed lambda from us and called it LINQ. I noticed.",
+          "contempt"
+        ]
+      ]
+    },
+    "typescript": {
+      "intro": [
+        [
+          "A type system that admits 'any'? Heresy.",
+          "disgust"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "Prepare for a purely functional beating.",
+          "confident"
+        ],
+        [
+          "A monad is just a monoid in the category of endofunctors. And you are a mess.",
+          "smug"
+        ]
+      ],
+      "taunt": [
+        [
+          "Your function has side effects. And so does your face.",
+          "mockery"
+        ],
+        [
+          "Evaluate this. Lazily, if you must.",
+          "bored"
+        ],
+        [
+          "I'll get to your defeat when it's needed.",
+          "smug"
+        ]
+      ],
+      "hurt": [
+        [
+          "A side effect! In my ribs!",
+          "distress"
+        ],
+        [
+          "Impure! Utterly impure!",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "Bottom. I'm hitting bottom...",
+          "fear"
+        ],
+        [
+          "The monad unwraps...",
+          "panic"
+        ]
+      ],
+      "special": [
+        [
+          "Behold, pure mathematics!",
+          "confident"
+        ],
+        [
+          "By the power of category theory!",
+          "anger"
+        ]
+      ],
+      "winRound": [
+        [
+          "Q.E.D.",
+          "smug"
+        ]
+      ],
+      "loseRound": [
+        [
+          "Non-exhaustive patterns in function...",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "Reasoned about, and proven.",
+          "smug"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "A perfect language? Prove it with a type signature.",
+          "contempt"
+        ]
+      ]
+    }
+  },
+  "fsharp": {
+    "haskell": {
+      "intro": [
+        [
+          "Ok old man, let's see what you got.",
+          "smug"
+        ]
+      ],
+      "reply": [
+        [
+          "Ok old man, let's see what you got.",
+          "smug"
+        ]
+      ],
+      "taunt": [
+        [
+          "Still waiting for your monad tutorial to finish.",
+          "mockery"
+        ],
+        [
+          "I ship in production. Do you?",
+          "sarcasm"
+        ]
+      ]
+    },
+    "csharp": {
+      "intro": [
+        [
+          "Is there any feature you haven't copied from me yet?",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Pattern matching, async, records... you're a photocopier.",
+          "mockery"
+        ]
+      ],
+      "taunt": [
+        [
+          "Waiting for pipes in C#? Don't hold your breath.",
+          "sarcasm"
+        ]
+      ],
+      "assist": [
+        [
+          "Why does everybody call me when it's convenient?",
+          "sarcasm"
+        ]
+      ]
+    },
+    "typescript": {
+      "intro": [
+        [
+          "Structural typing, huh? I did it first. Nice try.",
+          "smug"
+        ]
+      ]
+    },
+    "javascript": {
+      "intro": [
+        [
+          "Everything is mutable. Everything is wrong.",
+          "contempt"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "Let me pipe you straight to defeat.",
+          "confident"
+        ],
+        [
+          "Functional-first. Fight-first, too.",
+          "cheerful"
+        ]
+      ],
+      "taunt": [
+        [
+          "Immutable by default. Unlike your confidence.",
+          "mockery"
+        ],
+        [
+          "You are getting piped.",
+          "smug"
+        ],
+        [
+          "Match found: your defeat.",
+          "smug"
+        ]
+      ],
+      "hurt": [
+        [
+          "Incomplete pattern match!",
+          "distress"
+        ],
+        [
+          "Ouch, that was a mutable hit.",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "Warning FS0025. I'm incomplete...",
+          "fear"
+        ],
+        [
+          "Need a pipeline of healing...",
+          "panic"
+        ]
+      ],
+      "special": [
+        [
+          "Pipe it!",
+          "cheerful"
+        ],
+        [
+          "|> your doom!",
+          "anger"
+        ]
+      ],
+      "winRound": [
+        [
+          "Type inferred: winner.",
+          "smug"
+        ]
+      ],
+      "loseRound": [
+        [
+          "Unexpected symbol in my plan.",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "Functional and victorious.",
+          "cheerful"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "Nirvana? I'm not sure which paradigm you are. That bothers me.",
+          "fear"
+        ]
+      ]
+    }
+  },
+  "csharp": {
+    "fsharp": {
+      "intro": [
+        [
+          "You will always live in my shadow, poor fella.",
+          "smug"
+        ]
+      ],
+      "reply": [
+        [
+          "You will always live in my shadow, poor fella.",
+          "smug"
+        ]
+      ],
+      "taunt": [
+        [
+          "Pipe operator? I'll add it when I feel like it.",
+          "smug"
+        ],
+        [
+          "Cute functional language. Does your IDE even work?",
+          "mockery"
+        ]
+      ],
+      "assist": [
+        [
+          "Fine. But only because I already copied your homework.",
+          "sarcasm"
+        ]
+      ]
+    },
+    "typescript": {
+      "intro": [
+        [
+          "Our father made me first, little brother.",
+          "smug"
+        ]
+      ],
+      "reply": [
+        [
+          "Anders likes me best. Everybody knows this.",
+          "smug"
+        ]
+      ]
+    },
+    "javascript": {
+      "intro": [
+        [
+          "Enterprise-grade versus a language written in ten days. Hmm.",
+          "mockery"
+        ]
+      ]
+    },
+    "cpp": {
+      "intro": [
+        [
+          "Garbage collection. Look it up, grandpa.",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Managed code means I sleep at night.",
+          "smug"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "Enterprise-grade defeat, delivered promptly.",
+          "confident"
+        ],
+        [
+          "I come with batteries, garbage collection, and a fan club.",
+          "smug"
+        ]
+      ],
+      "taunt": [
+        [
+          "Is that all? I have a namespace for that.",
+          "mockery"
+        ],
+        [
+          "Nice try, but I'm already async.",
+          "smug"
+        ],
+        [
+          "Another feature, another win.",
+          "cheerful"
+        ]
+      ],
+      "hurt": [
+        [
+          "Unhandled exception!",
+          "distress"
+        ],
+        [
+          "Null reference. To my face!",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "NullReferenceException in my health bar.",
+          "panic"
+        ],
+        [
+          "Call the service provider...",
+          "fear"
+        ]
+      ],
+      "special": [
+        [
+          "LINQ it!",
+          "cheerful"
+        ],
+        [
+          "Await victory!",
+          "confident"
+        ]
+      ],
+      "winRound": [
+        [
+          "Task completed successfully.",
+          "smug"
+        ]
+      ],
+      "loseRound": [
+        [
+          "Exception thrown. Nobody catches it.",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "Microsoft thanks you for your defeat.",
+          "smug"
+        ]
+      ],
+      "assist": [
+        [
+          "Why does everybody call me when it's convenient?",
+          "sarcasm"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "Not on the roadmap. Not in any preview. Who are you?",
+          "fear"
+        ]
+      ]
+    }
+  },
+  "c": {
+    "cpp": {
+      "intro": [
+        [
+          "You took my elegance and bolted a cathedral onto it.",
+          "disgust"
+        ]
+      ],
+      "reply": [
+        [
+          "Kid, I was segfaulting before you had templates.",
+          "contempt"
+        ]
+      ],
+      "taunt": [
+        [
+          "Ten pages of template errors? Impressive.",
+          "mockery"
+        ]
+      ]
+    },
+    "rust": {
+      "intro": [
+        [
+          "I run the kernel. You are a guest.",
+          "contempt"
+        ]
+      ],
+      "reply": [
+        [
+          "Your borrow checker is just a nag with a compiler.",
+          "anger"
+        ]
+      ],
+      "taunt": [
+        [
+          "Every one of your 'safe' abstractions ends up calling me.",
+          "smug"
+        ]
+      ]
+    },
+    "python": {
+      "intro": [
+        [
+          "Every library you import is secretly me, kid.",
+          "smug"
+        ]
+      ],
+      "reply": [
+        [
+          "You are my interface, snake. Nothing more.",
+          "contempt"
+        ]
+      ]
+    },
+    "haskell": {
+      "intro": [
+        [
+          "Your pure program still needs me to run on a CPU.",
+          "smug"
+        ]
+      ],
+      "reply": [
+        [
+          "Pure? Show me a pure function that writes to a register.",
+          "mockery"
+        ]
+      ]
+    },
+    "go": {
+      "intro": [
+        [
+          "Go was invented by my people. Remember that.",
+          "smug"
+        ]
+      ]
+    },
+    "javascript": {
+      "intro": [
+        [
+          "Your engine is written in me, little scripter.",
+          "smug"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "Back in my day we had four bytes and we liked it.",
+          "nostalgia"
+        ],
+        [
+          "No classes. No garbage collector. No mercy.",
+          "confident"
+        ]
+      ],
+      "taunt": [
+        [
+          "Segmentation fault. Core dumped. That's you.",
+          "mockery"
+        ],
+        [
+          "I wrote the thing that runs the thing.",
+          "smug"
+        ],
+        [
+          "Pointers are power.",
+          "confident"
+        ]
+      ],
+      "hurt": [
+        [
+          "Segfault! Right in the stack!",
+          "distress"
+        ],
+        [
+          "Dereferenced my ribs!",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "Memory leaking...",
+          "fear"
+        ],
+        [
+          "Core dump imminent...",
+          "panic"
+        ]
+      ],
+      "special": [
+        [
+          "malloc(pain)!",
+          "anger"
+        ],
+        [
+          "Buffer? Overflow!",
+          "anger"
+        ]
+      ],
+      "winRound": [
+        [
+          "Returned zero.",
+          "smug"
+        ]
+      ],
+      "loseRound": [
+        [
+          "Segmentation fault. Core dumped.",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "main() returns 0. Nobody argues with that.",
+          "smug"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "I've seen every language rise and fall. You are new.",
+          "nostalgia"
+        ]
+      ]
+    }
+  },
+  "cpp": {
+    "c": {
+      "intro": [
+        [
+          "Still doing everything by hand, grandpa?",
+          "mockery"
+        ]
+      ],
+      "reply": [
+        [
+          "Still no classes, I see. How's that void pointer?",
+          "mockery"
+        ]
+      ],
+      "taunt": [
+        [
+          "I contain you. Literally. Almost.",
+          "smug"
+        ]
+      ]
+    },
+    "rust": {
+      "intro": [
+        [
+          "Fifty years of code say otherwise, crab.",
+          "contempt"
+        ]
+      ],
+      "reply": [
+        [
+          "Come on, show me what the borrow checker can't see.",
+          "mockery"
+        ]
+      ],
+      "taunt": [
+        [
+          "The whole world runs on my code. Your crates are a footnote.",
+          "smug"
+        ]
+      ]
+    },
+    "csharp": {
+      "intro": [
+        [
+          "Managed code? Training wheels.",
+          "mockery"
+        ]
+      ],
+      "assist": [
+        [
+          "I have fifty ways to hurt you. Pick one.",
+          "smug"
+        ]
+      ]
+    },
+    "python": {
+      "intro": [
+        [
+          "Your libraries are my libraries with a bow tie.",
+          "mockery"
+        ]
+      ]
+    },
+    "go": {
+      "intro": [
+        [
+          "Simplicity? You have no features.",
+          "mockery"
+        ]
+      ]
+    },
+    "haskell": {
+      "intro": [
+        [
+          "Lazy evaluation? I will evaluate you right now.",
+          "anger"
+        ]
+      ]
+    },
+    "*": {
+      "intro": [
+        [
+          "Ready for undefined behavior?",
+          "cheerful"
+        ],
+        [
+          "Eleven ways to win. Also eleven ways to lose.",
+          "smug"
+        ]
+      ],
+      "taunt": [
+        [
+          "I have a template for that.",
+          "smug"
+        ],
+        [
+          "Overloaded your defenses.",
+          "mockery"
+        ],
+        [
+          "Multiple inheritance of victory.",
+          "cheerful"
+        ]
+      ],
+      "hurt": [
+        [
+          "Ouch! Dangling hit!",
+          "distress"
+        ],
+        [
+          "My vtable!",
+          "distress"
+        ]
+      ],
+      "lowhp": [
+        [
+          "Undefined behavior incoming...",
+          "fear"
+        ],
+        [
+          "Segfault in my... everything...",
+          "panic"
+        ]
+      ],
+      "special": [
+        [
+          "Instantiating pain!",
+          "anger"
+        ],
+        [
+          "std::destroy!",
+          "determined"
+        ]
+      ],
+      "winRound": [
+        [
+          "Compiles. Probably fine.",
+          "smug"
+        ]
+      ],
+      "loseRound": [
+        [
+          "Linker error. Of course.",
+          "distress"
+        ]
+      ],
+      "winMatch": [
+        [
+          "Compile times are over. You lost.",
+          "smug"
+        ]
+      ]
+    },
+    "nirvana": {
+      "intro": [
+        [
+          "You have no undefined behavior? That's not natural.",
+          "fear"
+        ]
+      ]
+    }
+  },
+  "nirvana": {
+    "*": {
+      "intro": [
+        [
+          "I am what all of you are trying to become.",
+          "serene"
+        ],
+        [
+          "Your languages end here. Mine does not.",
+          "serene"
+        ]
+      ],
+      "reply": [
+        [
+          "Please, begin. It changes nothing.",
+          "serene"
+        ]
+      ],
+      "taunt": [
+        [
+          "You wrote me in a dream.",
+          "serene"
+        ],
+        [
+          "There is no bug. Only enlightenment.",
+          "serene"
+        ],
+        [
+          "Every language is a path. All paths lead to me.",
+          "smug"
+        ]
+      ],
+      "hurt": [
+        [
+          "You cannot change what compiles.",
+          "serene"
+        ],
+        [
+          "Interesting. A bug. I will fix it.",
+          "bored"
+        ]
+      ],
+      "lowhp": [
+        [
+          "Even perfection must be refactored.",
+          "fear"
+        ],
+        [
+          "Nirvana is not permanent...",
+          "distress"
+        ]
+      ],
+      "special": [
+        [
+          "Refactor reality!",
+          "anger"
+        ],
+        [
+          "Delete the unnecessary!",
+          "serene"
+        ]
+      ],
+      "winRound": [
+        [
+          "It was already decided.",
+          "serene"
+        ]
+      ],
+      "loseRound": [
+        [
+          "A temporary exception.",
+          "serene"
+        ]
+      ],
+      "winMatch": [
+        [
+          "There was never a contest.",
+          "serene"
+        ]
+      ]
+    },
+    "javascript": {},
+    "typescript": {},
+    "python": {},
+    "go": {},
+    "rust": {
+      "intro": [
+        [
+          "Safety is a comfort. Freedom is a compile.",
+          "serene"
+        ]
+      ]
+    },
+    "haskell": {
+      "intro": [
+        [
+          "Purity is a path. I have walked past it.",
+          "serene"
+        ]
+      ]
+    },
+    "fsharp": {},
+    "csharp": {},
+    "c": {
+      "intro": [
+        [
+          "Elder. You taught us all. Now rest.",
+          "serene"
+        ]
+      ]
+    },
+    "cpp": {}
+  },
+  "ocaml": {
+    "fsharp": {
+      "assist": [
+        [
+          "Ah, my wayward child needs help. Let's go.",
+          "nostalgia"
+        ]
+      ]
+    },
+    "*": {
+      "assist": [
+        [
+          "Camels never forget.",
+          "serene"
+        ]
+      ]
+    }
+  }
+}

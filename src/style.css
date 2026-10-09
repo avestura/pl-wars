@@ -1,0 +1,16 @@
+html, body { margin: 0; height: 100%; background: #05060f; overflow: hidden; overscroll-behavior: none; touch-action: none; user-select: none; -webkit-user-select: none; }
+body { display: flex; align-items: center; justify-content: center; }
+#stage { position: relative; line-height: 0; }
+#game { image-rendering: pixelated; image-rendering: crisp-edges; background: #000; display: block; box-shadow: 0 0 60px rgba(90, 110, 255, .25); }
+#touch { position: absolute; left: 0; top: 0; display: none; pointer-events: none; }
+#touch .pad, #touch .pausebtn { pointer-events: auto; }
+.pad { position: absolute; bottom: 4%; }
+.pad.left { left: 2%; width: 30%; height: 42%; }
+.pad.right { right: 2%; width: 40%; height: 46%; }
+.tb { position: absolute; width: 22%; aspect-ratio: 1; border-radius: 50%; border: 2px solid rgba(255,255,255,.55); background: rgba(20,24,60,.55); color: #fff; font: bold 16px monospace; touch-action: none; }
+.tb.on { background: rgba(123,140,255,.8); }
+.pad.left .tl { left: 0; top: 36%; } .pad.left .tr { left: 46%; top: 36%; } .pad.left .tu { left: 23%; top: 0; } .pad.left .td { left: 23%; top: 62%; }
+.pad.right .a1 { right: 0; top: 40%; } .pad.right .a2 { right: 26%; top: 18%; } .pad.right .a3 { right: 52%; top: 40%; } .pad.right .a4 { right: 0; top: 74%; width: 18%; }
+.pad.right .a5 { right: 26%; top: 64%; width: 18%; } .pad.right .a6 { right: 46%; top: 70%; width: 18%; } .pad.right .a7 { right: 66%; top: 62%; width: 18%; }
+.pausebtn { position: absolute; top: 2%; left: 50%; transform: translateX(-50%); width: 7%; border-radius: 10px; }
+#error { display: none; position: fixed; inset: auto 0 0 0; padding: 12px; background: #5a1c1c; color: #fff; font: 14px monospace; }

@@ -1,0 +1,5 @@
+node_modules
+dist
+*.log
+voice-script.json
+voice-script.csv
