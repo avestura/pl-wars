@@ -82,6 +82,7 @@ function title(g: CanvasRenderingContext2D, s: string, sub?: string) {
 const MODE_NAME: Record<Mode, string> = { arcade: 'ARCADE LADDER', vsai: 'VERSUS — VS AI', vs2p: 'VERSUS — 2 PLAYERS', training: 'SKILL PLAYGROUND' };
 
 // ================================================================== title
+const SOURCE_URL = 'https://github.com/avestura/pl-wars/';
 export class TitleScreen implements Screen {
   music = 'menu';
   menu!: ListMenu;
@@ -96,7 +97,8 @@ export class TitleScreen implements Screen {
       { label: 'Versus: Player vs Player', action: go('vs2p') },
       { label: 'Skill Playground (test abilities)', action: go('training') },
       { label: 'Settings & Controls', action: () => app.go(new SettingsScreen()) },
-    ], W / 2, 322, 480, 44, 21);
+      { label: 'Source code on GitHub ↗', action: () => { window.open(SOURCE_URL, '_blank', 'noopener,noreferrer'); } },
+    ], W / 2, 296, 480, 38, 19);
   }
   update(app: App, m: MenuPress) { this.menu.update(app, m); }
   pointer(app: App, x: number, y: number, d: boolean) { this.menu.pointer(app, x, y, d); }
@@ -117,7 +119,7 @@ export class TitleScreen implements Screen {
       app.assets.sprite(g, id, 'walk', Math.floor(t / 6 + i) % 6, x, H - 14, 1, 2.2, 0.4);
     });
     // soft panel so the menu stays readable over the fighters
-    g.fillStyle = 'rgba(8,10,28,.88)'; rrect(g, W / 2 - 250, 286, 500, 226, 14); g.fill();
+    g.fillStyle = 'rgba(8,10,28,.88)'; rrect(g, W / 2 - 250, 262, 500, 250, 14); g.fill();
     this.menu.draw(g, t);
     const touch = matchMedia('(pointer: coarse)').matches;
     text(g, touch ? 'tap to select' : '↑↓ move   Enter / Space / J confirm   Esc back', W / 2, H - 6, 12, '#7782c9', 'center');
