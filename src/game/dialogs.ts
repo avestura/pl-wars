@@ -40,8 +40,8 @@ export function pickLine(speaker: HelperId, listener: HelperId, phase: Phase, rn
   const order: Phase[] = phase === 'reply' ? ['reply', 'intro'] : phase === 'intro' ? ['intro', 'reply'] : [phase];
   for (const ph of order) {
     let specific = pool(speaker, listener, ph);
-    // midgame phases: matchup-specific lines are used ~60% of the time so generic lines still show up
-    if (specific.length && (phase === 'intro' || phase === 'reply' || phase === 'assist' || rng() < 0.65)) {
+    // matchup-specific lines are favoured (~70%) but never exclusive, so generic lines keep every fight varied
+    if (specific.length && rng() < (phase === 'assist' ? 1 : phase === 'intro' || phase === 'reply' ? 0.7 : 0.65)) {
       const fresh = exclude ? specific.filter((l) => !exclude.has(l.id)) : specific;
       if (fresh.length) specific = fresh;
       return specific[Math.floor(rng() * specific.length)];
